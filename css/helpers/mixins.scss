@@ -1,0 +1,26 @@
+$sprite-spacing: 5px;
+$plataforma-spacing: 17px;
+$plataforma-image-default-width: 300px;
+$sprite-image-default-height: 300px;
+
+
+@import 'sprite/*.png';
+@import 'plataforma/*.png';
+
+@mixin borda-arredondada($raio: 10px) {
+  -webkit-border-radius: $raio;
+  border-radius: $raio;  
+}
+
+%image-replecement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+
+
+////////////////////////
+@import "compass/css3";
+ 
+@import "compass/utilities";
